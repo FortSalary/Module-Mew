@@ -40,7 +40,7 @@
 	<p>- 13/6/2021: Add module meewmeew.</p>
 	<p>- 21/6/2021: Update module surprise, adduser.</p>
 	<p>- 22/6/2021: Update API, module sim.</p>
-	<p>- 24/6/2021: Add module antiout.</p>
+	<p>- 24/6/2021: Add module antiout, update meewmeew.</p>
 </details>
 
 # Vị Trí Lưu
