@@ -5,7 +5,7 @@
 
 module.exports.config = {
     name: "meewmeew",
-    version: "1.0.1",
+    version: "1.1.0",
     hasPermssion: 2,
     credits: "ProCoderMew",
     description: "Tải hoặc cập nhật tất cả module của Mew",
