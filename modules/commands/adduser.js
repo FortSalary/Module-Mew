@@ -5,7 +5,7 @@
 
 module.exports.config = {
 	name: "adduser",
-	version: "2.2.0",
+	version: "2.3.0",
 	hasPermssion: 0,
 	credits: "ProCoderMew",
 	description: "Thêm người dùng vào nhóm bằng link hoặc id",
@@ -29,7 +29,6 @@ module.exports.run = async function ({ api, event, args, Threads, Users }) {
 	else {
 		try {
 			var data = await this.data(args[0], api);
-			console.log(data)
 			if (data.success == false) return out(data.error);
 			else return adduser(data.id, data.name || undefined);
 		} catch (e) {
