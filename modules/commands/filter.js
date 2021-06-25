@@ -10,7 +10,7 @@ module.exports.config = {
 	credits: "ProCoderMew",
 	description: "Lọc cá cảnh trong group",
 	commandCategory: "group",
-	usages: "[num]",
+	usages: "filter [num]",
 	cooldowns: 30
 };
 

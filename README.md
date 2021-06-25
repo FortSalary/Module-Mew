@@ -1,11 +1,11 @@
 <h1 align="center">
-	<img src="https://i.imgur.com/4sWdkoB.png" alt="Mirai V2">
+	<img src="https://i.imgur.com/4sWdkoB.png" alt="MewMew">
 </h1>
 
 <p align="center">
-	<a href="https://github.com/ProCoderMew/Module-Miraiv2/commits" target="_blank"><img alt="commits" src="https://img.shields.io/github/commit-activity/m/ProCoderMew/Module-Miraiv2.svg?label=commit&style=flat-square"></a>
-	<a href="https://github.com/ProCoderMew/Module-Miraiv2/issues" target="_blank"><img alt="GitHub issues" src="https://img.shields.io/github/issues/ProCoderMew/Module-Miraiv2"></a>
-	<a href="https://github.com/ProCoderMew/Module-Miraiv2/stargazers" target="_blank"><img alt="GitHub stars" src="https://img.shields.io/github/stars/ProCoderMew/Module-Miraiv2"></a>
+	<a href="https://github.com/miraiPr0ject/Module-Mew/commits" target="_blank"><img alt="commits" src="https://img.shields.io/github/commit-activity/m/miraiPr0ject/Module-Mew.svg?label=commit&style=flat-square"></a>
+	<a href="https://github.com/miraiPr0ject/Module-Mew/issues" target="_blank"><img alt="GitHub issues" src="https://img.shields.io/github/issues/miraiPr0ject/Module-Mew"></a>
+	<a href="https://github.com/miraiPr0ject/Module-Mew/stargazers" target="_blank"><img alt="GitHub stars" src="https://img.shields.io/github/stars/miraiPr0ject/Module-Mew"></a>
 </p>
 
 # Module hỗ trợ cho source [MiraiPr0ject/Miraiv2](https://github.com/miraiPr0ject/miraiv2)
@@ -15,7 +15,7 @@
 - **Cấm chỉnh sửa(mod) module.**
 - **Bạn và bot bạn có thể lên danh sánh gban nếu vi phạm các điều trên.**
 
-# Các thay đổi (Cập nhật: 24/6/2021)
+# Các thay đổi (Cập nhật: 25/6/2021)
 
 <details>
 	<summary>Xem các thay đổi.</summary>
@@ -41,6 +41,7 @@
 	<p>- 21/6/2021: Update module surprise, adduser.</p>
 	<p>- 22/6/2021: Update API, module sim.</p>
 	<p>- 24/6/2021: Update.</p>
+	<p>- 25/6/2021: Update.</p>
 </details>
 
 # Vị Trí Lưu

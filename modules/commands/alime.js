@@ -10,7 +10,7 @@ module.exports.config = {
     credits: "ProCoderMew",
     description: "alime sfw và cả alime nsfw :)",
     commandCategory: "random-img",
-    usages: "tag",
+    usages: "alime [tag]",
     cooldowns: 5,
     dependencies: {
         "axios": "",

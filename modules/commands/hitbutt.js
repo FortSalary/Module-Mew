@@ -10,7 +10,7 @@ module.exports.config = {
     credits: "ProCoderMew",
     description: "",
     commandCategory: "general",
-    usages: "[tag]",
+    usages: "hithutt [@tag]",
     cooldowns: 5,
     dependencies: {
         "axios": "",
