@@ -15,34 +15,7 @@
 - **Cấm chỉnh sửa(mod) module.**
 - **Bạn và bot bạn có thể lên danh sánh gban nếu vi phạm các điều trên.**
 
-# Các thay đổi (Cập nhật: 25/6/2021)
-
-<details>
-	<summary>Xem các thay đổi.</summary>
-	<br>
-	<p>- 1/4/2021: Thêm module sim, img, slap, hitbutt.</p>
-	<p>- 21/4/2021: Update module img.</p>
-	<p>- 22/4/2021: Update module sim.</p>
-	<p>- 23/4/2021: Update module sim.</p>
-	<p>- 24/4/2021: Update module sim.</p>
-	<p>- 6/5/2021: Update module covid & adduser.</p>
-	<p>- 16/5/2021: Update module linkword, sortword, sim, teach.</p>
-	<p>- 22/5/2021: Update module img.</p>
-	<p>- 24/5/2021: Update module addser.</p>
-	<p>- 29/5/2021: Add module xsmb.</p>
-	<p>- 30/5/2021: Add module filter, alime. Update module xsmb.</p>
-	<p>- 1/6/2021: Add module surprise.</p>
-	<p>- 5/6/2021: Update toàn bộ module.</p>
-	<p>- 6/6/2021: Fix vài module.</p>
-	<p>- 7/6/2021: Fix module surprise.</p>
-	<p>- 7/6/2021: Update module alime, hitbutt and slap.</p>
-	<p>- 10/6/2021: Update module img.</p>
-	<p>- 13/6/2021: Add module meewmeew.</p>
-	<p>- 21/6/2021: Update module surprise, adduser.</p>
-	<p>- 22/6/2021: Update API, module sim.</p>
-	<p>- 24/6/2021: Update.</p>
-	<p>- 25/6/2021: Update.</p>
-</details>
+# Cập nhật: 25/6/2021
 
 # Vị Trí Lưu
 - Module command: [modules/commands](https://github.com/miraiPr0ject/miraiv2/tree/main/modules/commands)
