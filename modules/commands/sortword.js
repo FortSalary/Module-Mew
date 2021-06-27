@@ -5,12 +5,12 @@
 
 module.exports.config = {
     name: "sortword",
-    version: "1.0.3",
+    version: "1.0.4",
     hasPermssion: 0,
     credits: "ProCoderMew",
     description: "Sắp xếp lại 1 từ tiếng anh bị xáo trộn",
     commandCategory: "game-sp",
-    usages: "sortword",
+    usages: "",
     cooldowns: 5,
     dependencies: {
         "axios": ""

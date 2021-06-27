@@ -5,12 +5,12 @@
 
 module.exports.config = {
     name: "linkword",
-    version: "2.0.4",
+    version: "2.0.5",
     hasPermssion: 0,
     credits: "ProCoderMew",
     description: "Chơi nối từ với bot hoặc thành viên trong nhóm",
     commandCategory: "game",
-    usages: "linkword",
+    usages: "",
     cooldowns: 5,
     dependencies: {
         "axios": ""

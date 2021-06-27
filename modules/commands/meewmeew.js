@@ -5,13 +5,13 @@
 
 module.exports.config = {
     name: "meewmeew",
-    version: "1.1.0",
+    version: "1.1.1",
     hasPermssion: 2,
     credits: "ProCoderMew",
     description: "Tải hoặc cập nhật tất cả module của Mew",
     commandCategory: "admin",
-    usages: "meewmeew",
-    cooldowns: 0,
+    usages: "",
+    cooldowns: 1,
     dependencies: {
         "axios": "",
         "fs-extra": "",

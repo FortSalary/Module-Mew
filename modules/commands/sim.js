@@ -10,7 +10,7 @@ module.exports.config = {
     credits: "ProCoderMew",
     description: "Chat cùng con sim mất dạy nhất",
     commandCategory: "General",
-    usages: "sim [args]",
+    usages: "[args]",
     cooldowns: 5,
     dependencies: {
         "axios": ""

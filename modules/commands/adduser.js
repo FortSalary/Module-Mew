@@ -5,12 +5,12 @@
 
 module.exports.config = {
 	name: "adduser",
-	version: "2.3.0",
+	version: "2.3.1",
 	hasPermssion: 0,
 	credits: "ProCoderMew",
 	description: "Thêm người dùng vào nhóm bằng link hoặc id",
 	commandCategory: "group",
-	usages: "adduser [args]",
+	usages: "[args]",
 	cooldowns: 5
 };
 

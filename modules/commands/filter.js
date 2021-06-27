@@ -5,12 +5,12 @@
 
 module.exports.config = {
 	name: "filter",
-	version: "2.0.0",
+	version: "2.0.1",
 	hasPermssion: 1,
 	credits: "ProCoderMew",
 	description: "Lọc cá cảnh trong group",
 	commandCategory: "group",
-	usages: "filter [num]",
+	usages: "[num]",
 	cooldowns: 30
 };
 

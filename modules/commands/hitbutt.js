@@ -5,12 +5,12 @@
 
 module.exports.config = {
     name: "hitbutt",
-    version: "2.1.0",
+    version: "2.1.1",
     hasPermssion: 0,
     credits: "ProCoderMew",
     description: "",
     commandCategory: "general",
-    usages: "hithutt [@tag]",
+    usages: "[@tag]",
     cooldowns: 5,
     dependencies: {
         "axios": "",
