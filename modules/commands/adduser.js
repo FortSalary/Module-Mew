@@ -5,7 +5,7 @@
 
 module.exports.config = {
 	name: "adduser",
-	version: "2.3.1",
+	version: "2.3.2",
 	hasPermssion: 0,
 	credits: "ProCoderMew",
 	description: "Thêm người dùng vào nhóm bằng link hoặc id",
@@ -21,7 +21,7 @@ module.exports.run = async function ({ api, event, args, Threads, Users }) {
 	const { threadID, senderID, messageID } = event;
 	const botID = api.getCurrentUserID();
 	const out = msg => api.sendMessage(msg, threadID, messageID);
-	var { participantIDs, approvalMode, adminIDs } = await Threads.getInfo(threadID) || await api.getThreadInfo(threadID);
+	var { participantIDs, approvalMode, adminIDs } = await api.getThreadInfo(threadID);
 	var participantIDs = participantIDs.map(e => parseInt(e));	
 
 	if (!args[0]) return out("Vui lòng nhập 1 id/link profile user cần add.");

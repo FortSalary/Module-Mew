@@ -5,7 +5,7 @@
 
 module.exports.config = {
     name: "hitbutt",
-    version: "2.1.1",
+    version: "2.2.1",
     hasPermssion: 0,
     credits: "ProCoderMew",
     description: "",
@@ -39,15 +39,8 @@ async function makeImage({ one, two }) {
 
     let hit_butt_img = await jimp.read(__root + "/hit_butt.png");
     let pathImg = __root + `/hit_butt_${one}_${two}.png`;
-    let avatarOne = __root + `/avt_${one}.png`;
-    let avatarTwo = __root + `/avt_${two}.png`;
-    
-    let getAvatarOne = (await axios.get(`https://api.miraiproject.tk/getavatar?ID=${one}`, { responseType: 'arraybuffer' })).data;
-    fs.writeFileSync(avatarOne, Buffer.from(getAvatarOne, 'utf-8'));
-    
-    let getAvatarTwo = (await axios.get(`https://api.miraiproject.tk/getavatar?ID=${two}`, { responseType: 'arraybuffer' })).data;
-    fs.writeFileSync(avatarTwo, Buffer.from(getAvatarTwo, 'utf-8'));
-    
+    let avatarOne = (await axios.get(`https://meewmeew.info/avatar/${one}`)).data;    
+    let avatarTwo = (await axios.get(`https://meewmeew.info/avatar/${two}`)).data;    
     let circleOne = await jimp.read(await circle(avatarOne));
     let circleTwo = await jimp.read(await circle(avatarTwo));
     hit_butt_img.resize(500, 500).composite(circleOne.resize(130, 130), 225, 5).composite(circleTwo.resize(120, 120), 352, 220);
@@ -55,9 +48,6 @@ async function makeImage({ one, two }) {
     let raw = await hit_butt_img.getBufferAsync("image/png");
     
     fs.writeFileSync(pathImg, raw);
-    fs.unlinkSync(avatarOne);
-    fs.unlinkSync(avatarTwo);
-    
     return pathImg;
 }
 async function circle(image) {
@@ -74,6 +64,6 @@ module.exports.run = async function ({ event, api, args }) {
     if (!mention[0]) return api.sendMessage("Vui lòng tag 1 người.", threadID, messageID);
     else {
         const one = senderID, two = mention[0];
-        return makeImage({ one, two }).then(path => api.sendMessage({ body: "Hư nè.. " + event.mentions[mention[0]].replace(/@/g, ""), attachment: fs.createReadStream(path) }, threadID, () => fs.unlinkSync(path), messageID));
+        return makeImage({ one, two }).then(path => api.sendMessage({ body: "Hư nè.. ", attachment: fs.createReadStream(path) }, threadID, () => fs.unlinkSync(path), messageID));
     }
 }

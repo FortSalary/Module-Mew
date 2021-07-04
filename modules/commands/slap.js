@@ -5,7 +5,7 @@
 
 module.exports.config = {
     name: "slap",
-    version: "2.1.1",
+    version: "2.2.1",
     hasPermssion: 0,
     credits: "ProCoderMew",
     description: "",
@@ -38,15 +38,8 @@ async function makeImage({ one, two }) {
 
     let slap_image = await jimp.read(__root + "/slap.png");
     let pathImg = __root + `/slap_${one}_${two}.png`;
-    let avatarOne = __root + `/avt_${one}.png`;
-    let avatarTwo = __root + `/avt_${two}.png`;
-    
-    let getAvatarOne = (await axios.get(`https://api.miraiproject.tk/getavatar?ID=${one}`, { responseType: 'arraybuffer' })).data;
-    fs.writeFileSync(avatarOne, Buffer.from(getAvatarOne, 'utf-8'));
-    
-    let getAvatarTwo = (await axios.get(`https://api.miraiproject.tk/getavatar?ID=${two}`, { responseType: 'arraybuffer' })).data;
-    fs.writeFileSync(avatarTwo, Buffer.from(getAvatarTwo, 'utf-8'));
-    
+    let avatarOne = (await axios.get(`https://meewmeew.info/avatar/${one}`)).data;    
+    let avatarTwo = (await axios.get(`https://meewmeew.info/avatar/${two}`)).data;    
     let circleOne = await jimp.read(await circle(avatarOne));
     let circleTwo = await jimp.read(await circle(avatarTwo));
     slap_image.composite(circleOne.resize(150, 150), 745, 25).composite(circleTwo.resize(140, 140), 180, 40);
