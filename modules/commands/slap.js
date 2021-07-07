@@ -47,9 +47,6 @@ async function makeImage({ one, two }) {
     let raw = await slap_image.getBufferAsync("image/png");
     
     fs.writeFileSync(pathImg, raw);
-    fs.unlinkSync(avatarOne);
-    fs.unlinkSync(avatarTwo);
-    
     return pathImg;
 }
 async function circle(image) {
