@@ -5,7 +5,7 @@
 
 module.exports.config = {
     name: "hitbutt",
-    version: "2.2.1",
+    version: "2.2.2",
     hasPermssion: 0,
     credits: "ProCoderMew",
     description: "",
@@ -41,8 +41,8 @@ async function makeImage({ one, two }) {
     let pathImg = __root + `/hit_butt_${one}_${two}.png`;
     let avatarOne = (await axios.get(`https://meewmeew.info/avatar/${one}`)).data;    
     let avatarTwo = (await axios.get(`https://meewmeew.info/avatar/${two}`)).data;    
-    let circleOne = await jimp.read(await circle(avatarOne));
-    let circleTwo = await jimp.read(await circle(avatarTwo));
+    let circleOne = await jimp.read(await circle(Buffer.from(avatarOne, 'utf-8')));
+    let circleTwo = await jimp.read(await circle(Buffer.from(avatarTwo, 'utf-8')));
     hit_butt_img.resize(500, 500).composite(circleOne.resize(130, 130), 225, 5).composite(circleTwo.resize(120, 120), 352, 220);
     
     let raw = await hit_butt_img.getBufferAsync("image/png");

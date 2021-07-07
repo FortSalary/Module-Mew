@@ -5,7 +5,7 @@
 
 module.exports.config = {
     name: "slap",
-    version: "2.2.1",
+    version: "2.2.2",
     hasPermssion: 0,
     credits: "ProCoderMew",
     description: "",
@@ -40,8 +40,8 @@ async function makeImage({ one, two }) {
     let pathImg = __root + `/slap_${one}_${two}.png`;
     let avatarOne = (await axios.get(`https://meewmeew.info/avatar/${one}`)).data;    
     let avatarTwo = (await axios.get(`https://meewmeew.info/avatar/${two}`)).data;    
-    let circleOne = await jimp.read(await circle(avatarOne));
-    let circleTwo = await jimp.read(await circle(avatarTwo));
+    let circleOne = await jimp.read(await circle(Buffer.from(avatarOne, 'utf-8')));
+    let circleTwo = await jimp.read(await circle(Buffer.from(avatarTwo, 'utf-8')));
     slap_image.composite(circleOne.resize(150, 150), 745, 25).composite(circleTwo.resize(140, 140), 180, 40);
     
     let raw = await slap_image.getBufferAsync("image/png");
