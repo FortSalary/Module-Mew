@@ -2,10 +2,10 @@
 * @author ProCoderMew
 * @warn Do not edit code or edit credits
 */
-
 module.exports.config = {
     name: "meewmeew",
     version: "1.1.1",
+    repoVersion: "2.0.0",
     hasPermssion: 2,
     credits: "ProCoderMew",
     description: "Tải hoặc cập nhật tất cả module của Mew",
