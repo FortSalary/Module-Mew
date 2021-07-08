@@ -15,7 +15,7 @@
 - **Cấm chỉnh sửa(mod) module.**
 - **Bạn và bot bạn có thể lên danh sách gban nếu vi phạm các điều trên.**
 
-# Cập nhật: 7/7/2021
+# Cập nhật: 8/7/2021
 
 # Vị Trí Lưu
 - Module command: [modules/commands](https://github.com/miraiPr0ject/miraiv2/tree/main/modules/commands)
