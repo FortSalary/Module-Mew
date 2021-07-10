@@ -1,17 +1,17 @@
 {
-	"version": "2.0.1",
+	"version": "2.2.0",
 	"change": ["antiout", "meewmeew"],
 	"modules": {
 		"commands": {
 			"adduser": "2.3.2",
 			"alime": "1.1.1",
-			"antiout": "1.1.0",
+			"antiout": "1.1.1",
 			"covid": "2.0.2",
 			"filter": "2.0.1",
 			"hitbutt": "2.2.2",
 			"img": "3.0.1",
 			"linkword": "2.0.5",
-			"meewmeew": "1.1.2",
+			"meewmeew": "2.0.0",
 			"sim": "4.0.0",
 			"slap": "2.2.2",
 			"sortword": "1.0.4",
@@ -20,7 +20,7 @@
 			"xsmb": "2.0.1"
 		},
 		"events": {
-			"antiout": "1.0.0"
+			"antiout": "1.0.1"
 		}
 	}
 }

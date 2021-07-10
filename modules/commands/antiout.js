@@ -1,6 +1,11 @@
+/**
+* @author ProCoderMew
+* @warn Do not edit code or edit credits
+*/
+
 module.exports.config = {
     name: "antiout",
-    version: "1.1.0",
+    version: "1.1.1",
     hasPermssion: 1,
     credits: "ProCoderMew",
     description: "Tự động add lại thành viên out chùa | Không chắc chắn là add lại được tất cả.",
@@ -29,13 +34,11 @@ module.exports.onLoad = function() {
         writeFileSync(path, JSON.stringify(data, null, 4));
     }
 
-    log("	[!] Lưu Ý [!]", '[ ANTIOUT ]');
+    log("[!] Lưu Ý [!]", '[ ANTIOUT ]');
     log("- Không sử dụng module vào mục đích quấy rối.", '[ ANTIOUT ]');
     log("- Vi phạm điều trên sẽ được góp mặt trong gban.", '[ ANTIOUT ]');
     log("[!] Vì 1 môi trường trong sạch hơn [!] ", '[ ANTIOUT ]');
-    log("- Hãy report những người có hành động như vậy cho Admin MiraiProject.", '[ ANTIOUT ]');    
-
-
+    log("- Hãy report những người có hành động như vậy cho Admin MiraiProject.", '[ ANTIOUT ]');
 }
 
 module.exports.run = async function({ api, event }) {

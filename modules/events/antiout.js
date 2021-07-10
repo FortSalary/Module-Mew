@@ -1,7 +1,12 @@
+/**
+* @author ProCoderMew
+* @warn Do not edit code or edit credits
+*/
+
 module.exports.config = {
     name: "antiout",
     eventType: ["log:unsubscribe"],
-    version: "1.0.0",
+    version: "1.0.1",
     credits: "ProCoderMew",
     description: "Listen events",
     dependencies: {
