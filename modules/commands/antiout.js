@@ -5,7 +5,7 @@
 
 module.exports.config = {
     name: "antiout",
-    version: "1.1.1",
+    version: "1.1.2",
     hasPermssion: 1,
     credits: "ProCoderMew",
     description: "Tự động add lại thành viên out chùa | Không chắc chắn là add lại được tất cả.",
@@ -50,10 +50,10 @@ module.exports.run = async function({ api, event }) {
     const { antiout } = database;
     if (antiout[threadID] == true) {
         antiout[threadID] = false;
-        api.sendMessage("Đã tắt chế độ chống out chùa.\nNghiêm cấm hành vi quấy rối.", threadID, messageID);
+        api.sendMessage("Đã tắt chế độ chống out chùa.", threadID, messageID);
     } else {
         antiout[threadID] = true;
-        api.sendMessage("Đã bật chế độ chống out chùa.", threadID, messageID);
+        api.sendMessage("Đã bật chế độ chống out chùa.\nNghiêm cấm hành vi quấy rối.", threadID, messageID);
     }
     writeFileSync(path, JSON.stringify(database, null, 4));
 }
