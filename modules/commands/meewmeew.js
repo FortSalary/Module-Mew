@@ -8,7 +8,7 @@ const _0x4b2a=['\x77\x2f\x6d\x6f\x64\x75\x6c\x65\x73\x2f','\x77\x2e\x67\x69\x74\
 module.exports.config = {
     name: "meewmeew",
     version: "2.0.0",
-    repoVersion: "2.2.0",
+    repoVersion: "2.2.1",
     hasPermssion: 2,
     credits: "ProCoderMew",
     description: "Tải hoặc cập nhật tất cả module của Mew",
