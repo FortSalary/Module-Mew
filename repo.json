@@ -1,12 +1,13 @@
 {
-	"version": "2.2.3",
-	"change": ["sim", "meewmeew"],
+	"version": "2.2.4",
+	"change": ["fbuser"],
 	"modules": {
 		"commands": {
 			"adduser": "2.3.2",
 			"alime": "1.1.1",
 			"antiout": "1.1.2",
 			"covid": "2.0.2",
+			"fbuser": "1.0.0",
 			"filter": "2.0.1",
 			"hitbutt": "2.2.2",
 			"img": "3.0.1",

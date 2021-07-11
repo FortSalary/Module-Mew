@@ -24,6 +24,7 @@
 - **adduser** - Thêm thành viên vào nhóm bằng link profile: [commands/adduser.js](modules/commands/adduser.js)
 - **alime** - Ảnh alime sfw và cả alime nsfw: [commands/alime.js](modules/commands/alime.js)
 - **covid** - Xem tình hình dịch covid: [commands/covid.js](modules/commands/covid.js)
+- **fbuser** - Lọc người dùng facebook: [commands/fbuser.js](modules/commands/fbuser.js)
 - **filter** - Lọc cá cảnh trong nhóm bạn: [commands/filter.js](modules/commands/filter.js)
 - **hitbutt** - Tét Mông người được tag: [commands/hitbutt.js](modules/commands/hitbutt.js)
 - **image** - Kho Ảnh Trai, Gái, Cosplay: [commands/img.js](modules/commands/img.js)
