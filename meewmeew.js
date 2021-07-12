@@ -131,7 +131,6 @@ const details = async function (modules) {
             case "--uninstall":
             case "-un":
                 try {
-                    await checkConnection();
                     console.log("================================================");
                     logger("Đang lấy dữ liệu cần thiết..", 'MeewMeew');
                     const data = await getModules();
