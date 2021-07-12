@@ -37,7 +37,6 @@
 - **teach** - Dạy sim: [commands/teach.js](modules/commands/teach.js)
 - **xsmb** - Xem kết quả xổ số miền bắc hôm nay: [commands/xsmb.js](modules/commands/xsmb.js)
 
-
 # Tác Giả
 - **ProCoderMew** - [GitHub](https://github.com/ProCoderMew) - [Facebook](https://www.facebook.com/ProCoder.Mew)
 
