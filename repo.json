@@ -1,11 +1,10 @@
 {
-	"version": "2.2.7",
-	"change": ["meewmeew"],
+	"version": "2.2.8",
+	"change": [],
 	"modules": {
 		"commands": {
 			"adduser": "2.3.2",
 			"alime": "1.1.1",
-			"antiout": "1.1.2",
 			"covid": "2.0.2",
 			"fbuser": "1.0.0",
 			"filter": "2.0.1",
@@ -21,7 +20,6 @@
 			"xsmb": "2.0.1"
 		},
 		"events": {
-			"antiout": "1.0.1"
 		}
 	}
 }
