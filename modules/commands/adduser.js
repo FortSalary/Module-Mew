@@ -5,7 +5,7 @@
 
 module.exports.config = {
 	name: "adduser",
-	version: "2.4.0",
+	version: "2.4.1",
 	hasPermssion: 0,
 	credits: "ProCoderMew",
 	description: "Thêm người dùng vào nhóm bằng link hoặc id",
@@ -31,7 +31,6 @@ module.exports.run = async function ({ api, event, args, Threads, Users }) {
 	else {
 		try {
 			var [id, name, fail] = await getUID(args[0], api);
-			console.log(id, name, fail)
 			if (fail == true && id != null) return out(id);
 			else if (fail == true && id == null) return out("Không tìm thấy ID người dùng.")
 			else {

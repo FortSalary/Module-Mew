@@ -1,9 +1,9 @@
 {
-	"version": "2.2.9",
-	"change": ["adduser", "alime", "fbuser", "img", "linkword", "meewmeew", "sim", "sortword"],
+	"version": "2.2.10",
+	"change": ["adduser"],
 	"modules": {
 		"commands": {
-			"adduser": "2.4.0",
+			"adduser": "2.4.1",
 			"alime": "1.1.2",
 			"covid": "2.0.2",
 			"fbuser": "2.0.0",
