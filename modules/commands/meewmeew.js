@@ -9,13 +9,13 @@ const cmdUrl = 'https://raw.githubusercontent.com/miraiPr0ject/Module-Mew/Mew/mo
 
 module.exports.config = {
     name: 'meewmeew',
-    version: '2.2.2',
+    version: '2.2.3',
     hasPermssion: 2,
     credits: 'ProCoderMew',
     description: 'T\u1EA3i ho\u1EB7c c\u1EADp nh\u1EADt t\u1EA5t c\u1EA3 module c\u1EE7a Mew',
     commandCategory: 'admin',
     usages: '[install/uninstall/update/b\u1ECF tr\u1ED1ng]',
-    cooldowns: 1,
+    cooldowns: 5,
     dependencies: {
         'axios': '',
         "fs-extra": '',
@@ -51,6 +51,7 @@ module.exports.onLoad = async function() {
     logger(`Các module có sự thay đổi: ${a.change.join(', ')}`, '[ MeewMeew ]'));
 };
 module.exports.getAll = async function() {
+    const axios = global.nodemodule.axios;
     const { data: a } = await axios.get(url);
     return [a.modules, a];
 };
@@ -66,6 +67,7 @@ module.exports.falseVersion = async function(a, b) {
     Object.keys(a.events).map(d => b.events[d] == a.events[d] && b.events[d] || (c.events[d] = [a.events[d], b.events[d] || null, d])), c
 };
 module.exports.update = async function(a, b) {
+    const axios = global.nodemodule.axios;
     const { data: c } = await axios.get(a);
     existsSync(b) && (await unlinkSync(b)), await new Promise((a) => setTimeout(a, 200)), await writeFileSync(b, Buffer.from(c, 'utf-8'))
 };
