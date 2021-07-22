@@ -9,7 +9,7 @@ const cmdUrl = 'https://raw.githubusercontent.com/miraiPr0ject/Module-Mew/Mew/mo
 
 module.exports.config = {
     name: 'meewmeew',
-    version: '2.2.4',
+    version: '2.2.5',
     hasPermssion: 2,
     credits: 'ProCoderMew',
     description: 'T\u1EA3i ho\u1EB7c c\u1EADp nh\u1EADt t\u1EA5t c\u1EA3 module c\u1EE7a Mew',
@@ -82,7 +82,6 @@ module.exports.run = async function ({ args: a, event: b, api: c, getText }) {
     async function d(a, d) {
         const e = require('./command');
         const f = require('./event');
-        console.log(d, a);
         if (0 == a.length, !Array.isArray(a)) return;
         var x = { moduleList: a, threadID: b.threadID, messageID: b.messageID, getText };
         0 != a.length && ('commands' === d ? e.loadCommand(x) : 'events' === d ? f.loadCommand(x) : void 0);
